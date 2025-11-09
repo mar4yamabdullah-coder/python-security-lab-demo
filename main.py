@@ -1,5 +1,5 @@
-import os
- password = "12345" # hardcoded password
- def insecure_func(user_input):
- eval("print(user_input)") # dangerous use of eval
- insecure_func("Hello, Bandit!"
+import hashlib
+ password = "secret123"
+ hashed = 
+hashlib.md5(password.encode()).hexdigest()
+ print(f"MD5 hash: {hashed}")
